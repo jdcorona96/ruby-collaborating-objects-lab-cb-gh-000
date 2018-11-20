@@ -10,11 +10,9 @@ class Song
   def self.new_by_filename(_filename)
     file_data = _filename.split(" - ")
     song = Song.new(file_data[1])
-    Artist.all.each do |artist|
-      if artist.name == file_data[0]
-        ## WIP
-      end
-    end
-    @artist = file_data[0]
+    artist = Artist.find_or_create_by_name(file_data[0])
+    artist.add_song(song)
+    song.artist = artist
+  
   end
 end #song
