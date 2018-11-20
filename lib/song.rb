@@ -14,7 +14,7 @@ class Song
       if artist.name == file_data[0]
         ## WIP
       end
+    end
     @artist = file_data[0]
-
   end
 end #song
