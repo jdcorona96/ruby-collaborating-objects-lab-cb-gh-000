@@ -11,7 +11,8 @@ class Song
     file_data = _filename.split(" - ")
     song = Song.new(file_data[1])
     artist = Artist.find_or_create_by_name(file_data[0])
-    #artist.add_song(song)
+    binding.pry
+    artist.add_song(song)
     song.artist = artist
     song
   end
