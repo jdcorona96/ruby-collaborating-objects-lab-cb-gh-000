@@ -2,6 +2,10 @@ class Artist
 
   @@all = []
 
+  def all
+    @@all
+  end
+
   def initialize(_name)
     @name = _name
     @songs = []
