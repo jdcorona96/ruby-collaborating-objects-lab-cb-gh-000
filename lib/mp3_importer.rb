@@ -11,4 +11,8 @@ class MP3Importer
       file.split("/").last
     end
   end
+
+  def import
+    
+  end
 end # MP3Importer class
