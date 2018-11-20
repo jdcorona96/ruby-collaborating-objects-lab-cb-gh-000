@@ -13,6 +13,5 @@ class Song
     artist = Artist.find_or_create_by_name(file_data[0])
     artist.add_song(song)
     song.artist = artist
-  
   end
 end #song
