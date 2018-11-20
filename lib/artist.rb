@@ -22,8 +22,5 @@ class Artist
         return artist
       end
     end
-      self.artist.name = name
-    end
-    
   end
 end #artist
