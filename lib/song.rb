@@ -13,6 +13,7 @@ class Song
     Artist.all.each do |artist|
       if artist.name == file_data[0]
         ## WIP
+      end
     @artist = file_data[0]
 
   end
