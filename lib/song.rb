@@ -11,8 +11,6 @@ class Song
     file_data = _filename.split(" - ")
     song = Song.new(file_data[1])
     @artist = file_data[0]
-    
-
 
   end
 end #song
