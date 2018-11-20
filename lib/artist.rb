@@ -24,6 +24,7 @@ class Artist
       end
     end
     artist = Artist.new(name)
+    artist.save
     artist
   end
 
