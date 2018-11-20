@@ -7,6 +7,6 @@ class MP3Importer
   attr_accessor :path
 
   def files
-
+    Dir["@path"]
   end
 end # MP3Importer class
