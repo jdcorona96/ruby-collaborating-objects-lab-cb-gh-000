@@ -7,7 +7,8 @@ class MP3Importer
   attr_accessor :path
 
   def files
-    Dir["@path"]
-    binding.pry
+    Dir["#{@path}/*"].collect do |file|
+      file.split("/").last
+    end
   end
 end # MP3Importer class
