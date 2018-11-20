@@ -7,7 +7,7 @@ class MP3Importer
   attr_accessor :path
 
   def files
-    Dir["#{@path}/*"].collect do |file|
+    Dir["#{@path}/*.mp3"].collect do |file|
       file.split("/").last
     end
   end
